@@ -75,6 +75,7 @@ function cerrar(){
 
 
 function registrar(){
+  var nombreregistro = document.getElementById('nombreregistro').value;
   var email = document.getElementById('email').value;
   var contrasena = document.getElementById('contrasena').value;
   var contrasenaC = document.getElementById('contrasenaC').value;
@@ -111,6 +112,13 @@ alert("Todo esta correcto");
       console.log(errorMessage);
       // ...
         });
+
+        firebase.database().ref('/Users').push({
+          correo : nombreregistro,
+          nombre : email,
+          password : contrasena         
+      });
+
         
       }
   
@@ -122,7 +130,7 @@ var user = firebase.auth().currentUser;
 user.sendEmailVerification().then(function() {
   // Email sent.
   console.log('Enviando correo...');
-  alert('Eres un pringao y siempre te va a fallar todo');
+  
 }).catch(function(error) {
   // An error happened.
   console.log(error);
