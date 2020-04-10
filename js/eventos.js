@@ -46,8 +46,8 @@ function writeUserData() {
     alert("Yeee");
     firebase.auth().onAuthStateChanged(function(user) { 
     firebase.database().ref('/uploads').push({
-        mImageUrl : allContent,
-        mName : urlevento,        
+        mImageUrl : urlevento,
+        mName : allContent,        
     });
 });
   }

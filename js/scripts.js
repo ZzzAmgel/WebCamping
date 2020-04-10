@@ -114,9 +114,9 @@ alert("Todo esta correcto");
         });
 
         firebase.database().ref('/Users').push({
-          correo : nombreregistro,
-          nombre : email,
-          password : contrasena         
+          correo : email,
+          nombre : nombreregistro
+                 
       });
 
         

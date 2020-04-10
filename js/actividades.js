@@ -1,13 +1,37 @@
 
     var rootRef = firebase.database().ref().child("uploads");
 
+    function htmlEscape(str) {
+        return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+    }
+
     rootRef.on("child_added", snap => {
+        
         var name = snap.child("mName").val();
         var url = snap.child("mImageUrl").val();
         console.log("marica");
 
-        $("#table_body").append("<tr><td><h1>Hola</h1>"+name+"</td><td>"+url+"</td></tr>");
+        
+
+        $("#table_body").append(`
+        
+        <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top" alt="Bootstrap Thumbnail First" style="max-height : 150px" src="${url}" />
+            <div class="card-block" style="word-break : break-all;">
+                <h4>${name.replace(/\n/g, "<br />")}</h4>
+            </div>
+        </div>
+    </div>    
+    `);
     });
+
+    
 
 
 /*
@@ -28,3 +52,5 @@
                         </div>
                     </div>
                     */
+
+
