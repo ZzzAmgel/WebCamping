@@ -1,0 +1,8 @@
+textarea{
+    align-items: center;
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 640px;
+    max-width: 640px;
+    border: none;
+}

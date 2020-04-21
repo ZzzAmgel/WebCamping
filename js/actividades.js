@@ -14,7 +14,7 @@
         
         var name = snap.child("mName").val();
         var url = snap.child("mImageUrl").val();
-        console.log("marica");
+        console.log("test");
 
         
 
