@@ -1,33 +1,30 @@
-.nav{
+.nav {
     margin-top: -5%;
     height: 3rem;
     position: fixed;
-    z-index:10;
+    z-index: 10;
     background-color: rgba(243, 245, 245, 0.9);
     justify-content: center;
 }
 
-.row{
-    margin-top: 5%;
-}
-.imginstalaciones:hover{
+.imginstalaciones:hover {
     transform: scale(1.1);
 }
 
 
 
 
-  
-.imginstalaciones{
+
+.imginstalaciones {
     border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-   border-radius: 8px;
-   width: 90%; 
-   height: 80%;
-  overflow: hidden;
-  transform: scale(1);
-  transition: all 0.3s;
+    border-radius: 4px;
+    padding: 5px;
+    border-radius: 8px;
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.3s;
 }
 
 .line {
@@ -39,9 +36,18 @@
     align-self: start;
 }
 
+.linefooter {
 
+    background-color: rgb(255, 0, 0);
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: 0;
+    align-self: start;
+    align-content: initial;
 
+}
 
-
-
-  
+.card {
+    box-shadow: 2px 2px 3px grey;
+}

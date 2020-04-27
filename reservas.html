@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +11,24 @@
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel='stylesheet'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/pagestyle/reservas.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='css/materialize.css'>
+    <link href='css/materialize.min.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-  </head>
-  <body>
 
-    <div class="container-fluid">
+</head>
+
+<body>
+
+
+
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
 
@@ -36,90 +48,63 @@
                     <li class="nav-item">
                         <a class="nav-link" href="actividades.html">Eventos</a>
                     </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mapa.html">Mapa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contacto.html">Contacta</a>
-                </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa.html">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacta</a>
+                    </li>
                     <li class="nav-item dropdown ml-md-auto">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
-                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
-                           <div class="dropdown-divider">
-                           </div> <a class="dropdown-item" href="#">Separated link</a>
-                       </div>
-                   </li>
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown">Dropdown link</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another
+                                action</a> <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider">
+                            </div> <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
                 </ul>
 
                 <h3>
                     h3. Lorem ipsum dolor sit amet.
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien
+                    sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed
+                    vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere
+                    diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
+                        imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna,
+                    vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu,
+                        pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
                 </p>
                 <div class="row">
                     <div class="col-md-2">
-                        
+
                     </div>
                     <div class="col-md-8">
-                        <form role="form"></form>
-                            <div class="form-group">
-                                <label for="nombrereserva">
-                                    Nombre
-                                </label>
-                                <input type="text" class="form-control" id="nombrereserva" />
-                            </div>
-                            <div class="form-group">
-                                <div class="form-group">
-                                    <label for="DNI">
-                                        DNI
-                                    </label>
-                                    <input type="text" class="form-control" id="dni" />
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-group">
-                                        <label for="fechaentrada">
-                                            Fecha Entrada
-                                        </label>
-                                        <input type="text" class="form-control" id="fechaentrada" />
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-group">
-                                            <label for="fechasalida">
-                                                Fecha Salida
-                                            </label>
-                                            <input type="text" class="form-control" id="fechasalida" />
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="form-group">
-                                                <label for="numeroadultos">
-                                                    Numero de Adultos
-                                                </label>
-                                                <input type="text" class="form-control" id="numeroadultos" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="numero ninos">
-                                                    Numero de Niños
-                                                </label>
-                                                <input type="text" class="form-control" id="numeroninos" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="numerotelefono">
-                                                    Numero de Telefono
-                                                </label>
-                                                <input type="text" class="form-control" id="numerotelefono" />
-                                            </div>
-                                            <div class="form-group">
-                                 
 
-                            </div>
-                            <button type="submit" onclick="writeUserData()" class="btn btn-primary">
-                                Submit
-                            </button>
-                            <a id = "contenido"></a>
-                        </form>
+                        <div class="form-style-8">
+                            <h2>Realizar Reserva</h2>
+                            <form style="align-content: center; text-align: center;">
+                                <img style="max-width: 10rem; max-height:12rem;" src="imagenes/rioruralicon.png">
+                                <input type="text" id="nombrereserva" placeholder="Nombre y apellidos" />
+                                <input type="text" id="dni" placeholder="DNI" />
+                                <input type="text" class="datepicker" id="fechaentrada"
+                                    placeholder="Fecha de llegada" />
+                                <input type="text" class="datepicker1" id="fechasalida" placeholder="Fecha de salida" />
+                                <input type="text" id="numeroadultos" placeholder="Número de adultos" />
+                                <input type="text" id="numeroninos" placeholder="Número de niños" />
+                                <input type="text" id="numerotelefono" placeholder="Número de telefono" />
+                                <input type="button" onclick="writeUserData()" value="Send Message" />
+
+                            </form>
+
+                        </div>
+
+
+                        <a id="contenido"></a>
                     </div>
                     <div class="col-md-2">
                     </div>
@@ -133,25 +118,44 @@
 
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
     <script>
-      // Initialize Firebase
-      const firebaseConfig = {
-    apiKey: "AIzaSyCzdsupudvzk45RUP3Wkam5fsAWkbyYlFg",
-    authDomain: "appcamping-7061a.firebaseapp.com",
-    databaseURL: "https://appcamping-7061a.firebaseio.com",
-    projectId: "appcamping-7061a",
-    storageBucket: "appcamping-7061a.appspot.com",
-    messagingSenderId: "515887803578",
-    appId: "1:515887803578:web:b686fe9ab0e79a47026683",
-    measurementId: "G-6GZ15RK2TS"
-    };
-      firebase.initializeApp(firebaseConfig);
-    
+        // Initialize Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyCzdsupudvzk45RUP3Wkam5fsAWkbyYlFg",
+            authDomain: "appcamping-7061a.firebaseapp.com",
+            databaseURL: "https://appcamping-7061a.firebaseio.com",
+            projectId: "appcamping-7061a",
+            storageBucket: "appcamping-7061a.appspot.com",
+            messagingSenderId: "515887803578",
+            appId: "1:515887803578:web:b686fe9ab0e79a47026683",
+            measurementId: "G-6GZ15RK2TS"
+        };
+        firebase.initializeApp(firebaseConfig);
     </script>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/reservas.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
-<script src="/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/reservas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        const Calender = document.querySelector('.datepicker');
+        M.Datepicker.init(Calender, {
+            format: 'dd/mm/yyyy'
+        });
+    </script>
+
+    <script>
+        const Calender1 = document.querySelector('.datepicker1');
+        M.Datepicker.init(Calender1, {
+            format: 'dd/mm/yyyy'
+        });
+    </script>
+
+</body>
+
+</html>
