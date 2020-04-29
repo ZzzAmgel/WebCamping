@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gestion</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="Angel Miranda Martínez">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel='stylesheet'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pagestyle/reservas.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='css/materialize.css'>
+    <link href="css/pagestyle/menu.css" rel="stylesheet">
+    <link href='css/materialize.min.css'>
+    <link href='css/pagestyle/gestion.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">Instalaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tarifas.html">Tarifas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa.html">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iniciarsesion.html">Inicia Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-light py-4 mt-2">
+            <div class="col">
+                <div class="form-style-8">
+                    <h2 onclick="myFunction()">Cambiar Fecha</h2>
+                    <form id="1st" style="align-content: center; text-align: center; display: none;">
+                        <img style="max-width: 10rem; max-height:12rem;" src="imagenes/rioruralicon.png">
+                        <input type="text" class="datepicker3" id="fechatempalta" placeholder="Fecha de llegada" />
+                        <input type="button" onclick="cambiarFecha()" value="Cambiar fecha temporada" />
+                    </form>
+                </div>
+                <div class="form-style-8">
+                    <h2 onclick="myFunction1()">Publicar Evento</h2>
+                    <form id="2st" style="align-content: center; text-align: center; display: none;">
+                        <img style="max-width: 10rem; max-height:12rem;" src="imagenes/rioruralicon.png">
+                        <input type="text" id="tituloevento" placeholder="Titulo" />
+                        <input type="text" id="descripcionevento" placeholder="Descripcion" />
+                        <input type="text" class="datepicker4" id="fechaevento" placeholder="Fecha de evento" />
+
+                        <input type="text" id="urlevento" placeholder="URL imagen (debe acabar en jpg o png)" />
+                        <input type="button" onclick="writeUserData()" value="Enviar Evento" />
+
+                    </form>
+
+                </div>
+
+                <div class="form-style-8">
+                    <h2 onclick="myFunction2()">Gastos</h2>
+                    <form id="3st" style="align-content: center; text-align: center; display: none;">
+                        <img style="max-width: 10rem; max-height:12rem;" src="imagenes/rioruralicon.png">
+                        <input type="text" id="nombreproducto" placeholder="Nombre del Producto" />
+                        <input type="text" id="precioproducto" placeholder="Precio producto" />
+                        <input type="text" class="datepicker5" id="fechaproducto" placeholder="Fecha" />
+                        <input type="button" onclick="writeGasto()" value="Enviar Gasto" />
+
+
+                        <table style="width:100%" id="ex-table">
+                            <tr id="tr">
+                                <th>Nombre del gasto</th>
+                                <th>Precio</th>
+                                <th>Fecha</th>
+                            <tr style="width:100%" id=tablebody></tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-style-8" id="lastform">
+        <h2 onclick="myFunction3()">Mostrar reservas</h2>
+        <form id="4st" style="align-content: center; text-align: center; display: none; height: 200%;">
+
+            <table style="width:100%" id="ex-table">
+                <tr id="tr">
+                    <th>Nombre titular</th>
+                    <th>Dni</th>
+                    <th>Email</th>
+                    <th>Casa o parcela</th>
+                    <th>Fecha inicio</th>
+                    <th>Fecha salida</th>
+                    <th>Numero de adultos</th>
+                    <th>Numero de niños</th>
+                    <th>Numero de telefono</th>
+                <tr style="width:100%" id=tablebody1></tr>
+            </table>
+        </form>
+    </div>
+
+
+
+
+    <!--- Scrips firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script>
+        const _0x5c7f = ['appcamping-7061a', 'G-6GZ15RK2TS', '515887803578', 'AIzaSyCzdsupudvzk45RUP3Wkam5fsAWkbyYlFg',
+            'initializeApp', 'appcamping-7061a.firebaseapp.com', 'appcamping-7061a.appspot.com',
+            '1:515887803578:web:b686fe9ab0e79a47026683', 'https://appcamping-7061a.firebaseio.com'
+        ];
+        (function (_0x2e9729, _0x5c7f16) {
+            const _0x1e1ebf = function (_0x1326e4) {
+                while (--_0x1326e4) {
+                    _0x2e9729['push'](_0x2e9729['shift']());
+                }
+            };
+            _0x1e1ebf(++_0x5c7f16);
+        }(_0x5c7f, 0x127));
+        const _0x1e1e = function (_0x2e9729, _0x5c7f16) {
+            _0x2e9729 = _0x2e9729 - 0x0;
+            let _0x1e1ebf = _0x5c7f[_0x2e9729];
+            return _0x1e1ebf;
+        };
+        const firebaseConfig = {
+            'apiKey': _0x1e1e('0x5'),
+            'authDomain': _0x1e1e('0x7'),
+            'databaseURL': _0x1e1e('0x1'),
+            'projectId': _0x1e1e('0x2'),
+            'storageBucket': _0x1e1e('0x8'),
+            'messagingSenderId': _0x1e1e('0x4'),
+            'appId': _0x1e1e('0x0'),
+            'measurementId': _0x1e1e('0x3')
+        };
+        firebase[_0x1e1e('0x6')](firebaseConfig);
+    </script>
+
+    <!--- Scrips imports -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/gestion.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!--- Scrips Date picker -->
+    <script>
+        const Calender3 = document.querySelector('.datepicker3');
+        M.Datepicker.init(Calender3, {
+            format: 'dd/mm/yyyy'
+        });
+
+        const Calender4 = document.querySelector('.datepicker4');
+        M.Datepicker.init(Calender4, {
+            format: 'dd/mm/yyyy'
+        });
+
+        const Calender5 = document.querySelector('.datepicker5');
+        M.Datepicker.init(Calender5, {
+            format: 'dd/mm/yyyy'
+        });
+    </script>
+
+
+</body>
+<footer>
+
+</footer>
+
+</html>

@@ -1,47 +1,47 @@
 body {
-    background-image: url(../../imagenes/background/instalaciones.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-size: 100%;    
-  }
+  /*background-image: url(../../imagenes/background/instalaciones.jpg); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100%;
+}
 
-  .encabezado{
-    background-color: white;
-    background-color:rgba(255, 255, 255, 0.98);
-      margin-bottom: 70px;
-      width: 100%;
-  }
-  
+.encabezado {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.98);
+  margin-bottom: 70px;
+  width: 100%;
+}
 
-  .casasrurales{
-    background-color: white;
-    background-color:rgba(255, 255, 255, 0.98);
-    margin-bottom: 70px;
-    width: 100%;
-  }
 
-  .camping{
-    background-color: white;
-    background-color:rgba(255, 255, 255, 0.8);
-    margin-bottom: 70px;
-    width: 100%;
-  }
+.casasrurales {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.98);
+  margin-bottom: 70px;
+  width: 100%;
+}
 
-  .restaurante{
-    background-color: white;
-    background-color:rgba(255, 255, 255, 0.8);
-    margin-bottom: 70px;
-    width: 100%;
-  }
+.camping {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 70px;
+  width: 100%;
+}
 
-  .piscina{
-    background-color: white;
-    background-color:rgba(255, 255, 255, 0.8);
-    margin-bottom: 70px;
-    width: 100%;
-  }
+.restaurante {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 70px;
+  width: 100%;
+}
 
-  p{
-      color: black;
-  }
+.piscina {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+p {
+  color: black;
+}

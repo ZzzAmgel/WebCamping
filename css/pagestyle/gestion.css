@@ -1,0 +1,13 @@
+h2:hover {
+    text-shadow: black;
+    font-weight: bold !important;
+}
+
+.form-style-8 h2:hover {
+    font-weight: bold !important;
+}
+
+
+.form-style-8 {
+    width: 800px !important;
+}

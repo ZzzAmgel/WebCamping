@@ -23,8 +23,7 @@ function observador() {
       }
       // ...
     } else {
-      contenido.innerHTML = `
-            <p>Debe verificar su dirección de correo electrónico</p>`;
+
       console.log('No existe usuario activo');
     }
   });
